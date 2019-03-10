@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <meta charset="utf-8" lang="en-US"/>
+        <title>Table test</title>
+        <style>
+            .right{
+                text-align: right;
+            }
+            .left{
+                text-align: left;
+            }
+            table {
+                background: #000;
+                width: 40%
+            }
+            table th {
+                background: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <th rowspan="2">
+                        1
+                    </th>
+                    <th class="right">2</th>
+                    <th class="right">3</th>
+                    <th rowspan="2">4</th>
+                </tr>
+                <tr>
+                    <th class="right">5</th>
+                    <th class="right">6</th>
+                </tr>
+                <tr>
+                    <th colspan="4">7</th>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <th class="left">9</th>
+                    <th class="left">10</th>
+                    <th>11</th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
