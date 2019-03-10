@@ -10,12 +10,18 @@
             .left{
                 text-align: left;
             }
-            table {
-                background: #000;
-                width: 40%
+            table, td, tr, th {
+                border-collapse: collapse;
+                border: 1px solid black;
             }
-            table th {
-                background: #fff;
+            table td {
+                width: 50px;
+            }
+            .center{
+                text-align: center;
+            }
+            #longer{
+                width: 80px;
             }
         </style>
     </head>
@@ -23,25 +29,25 @@
         <table>
             <tbody>
                 <tr>
-                    <th rowspan="2">
+                    <td rowspan="2" class="center">
                         1
-                    </th>
-                    <th class="right">2</th>
-                    <th class="right">3</th>
-                    <th rowspan="2">4</th>
+                    </td>
+                    <td class="right" id="longer">2</td>
+                    <td class="right">3</td>
+                    <td rowspan="2" class="center">4</td>
                 </tr>
                 <tr>
-                    <th class="right">5</th>
-                    <th class="right">6</th>
+                    <td class="right">5</td>
+                    <td class="right">6</td>
                 </tr>
                 <tr>
-                    <th colspan="4">7</th>
+                    <td colspan="4" class="center">7</td>
                 </tr>
                 <tr>
-                    <th>8</th>
-                    <th class="left">9</th>
-                    <th class="left">10</th>
-                    <th>11</th>
+                    <td class="center">8</td>
+                    <td class="left">9</td>
+                    <td class="left">10</td>
+                    <td class="center">11</td>
                 </tr>
             </tbody>
         </table>
